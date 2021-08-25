@@ -1,1 +1,6 @@
-# Medical_Software_Fall2021
+# Health Database
+
+Author: Stevan Kriss
+Fall 2021
+
+Specifications
