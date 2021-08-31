@@ -21,7 +21,7 @@ def interface():
         elif choice == 2:
             LDL_Driver()
         elif choice == 3:
-            cholesterol_Driver()
+            Cholesterol_Driver()
 
     print(choice)
     return choice
@@ -73,29 +73,27 @@ def LDL_Output(LDL_Value, LDL_Character):
     print("")
 
 
+# This is cholesterol analysis code from Alex Thomason
+# Choleserol functions
+def Cholesterol_Input():
+    Cholesterol_Value = int(input("Enter Cholesterol Value: "))
+    return Cholesterol_Value
 
-# This is cholesterol analysis code from AlexThomason - I am the superior code master. Bwahaha
+def Cholesterol_Driver():
+    Cholesterol_Value = Cholesterol_Input()
+    Cholesterol_Character = Cholesterol_Analysis(Cholesterol_Value)
+    Cholesterol_Output(Cholesterol_Value,Cholesterol_Character)
 
-def cholesterol_input():
-    cholesterol_value = int(input(("Enter Cholesterol Value: ")))
-    return cholesterol_value
-
-def cholesterol_Driver():
-    cholesterol_value = cholesterol_input()
-    cholesterol_character = check_cholesterol(cholesterol_value)
-    cholesterol_output(cholesterol_value,cholesterol_character)
-
-def check_cholesterol(value):
-    if value < 200:
+def Cholesterol_Analysis(Cholesterol_Value):
+    if Cholesterol_Value < 200:
         return "Normal"
-    elif 200 <= value <= 239:
+    elif 200 <= Cholesterol_Value <= 239:
         return "Borderline High"
     else :
         return "High"
 
-def cholesterol_output(value, character) :
-    print("Your cholesterol level is {}".format(value))
-    print("This cholesterol level is {}".format(character))
-
+def Cholesterol_Output(Cholesterol_Value, Cholesterol_Character) :
+    print("The cholesterol value of {} is considered {}".format(Cholesterol_Value,Cholesterol_Character))
+    print("")
 
 interface()
