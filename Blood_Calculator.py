@@ -83,7 +83,7 @@ def cholesterol_input():
 def cholesterol_Driver():
     cholesterol_value = cholesterol_input()
     cholesterol_character = check_cholesterol(cholesterol_value)
-    HDL_output(cholesterol_value,cholesterol_character)
+    cholesterol_output(cholesterol_value,cholesterol_character)
 
 def check_cholesterol(value):
     if value < 200:
