@@ -1,3 +1,6 @@
+# print("This is the Blood_Calculator.py module")
+# print("It's name is {}".format(__name__))
+
 #interface
 def interface():
     print("")
@@ -96,4 +99,5 @@ def Cholesterol_Output(Cholesterol_Value, Cholesterol_Character) :
     print("The cholesterol value of {} is considered {}".format(Cholesterol_Value,Cholesterol_Character))
     print("")
 
-interface()
+if __name__ == "__main__":
+    interface()
