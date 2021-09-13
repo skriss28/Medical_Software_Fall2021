@@ -1,7 +1,7 @@
 # print("This is the Blood_Calculator.py module")
 # print("It's name is {}".format(__name__))
 
-#interface
+# interface
 def interface():
     print("")
     print("Blood Calculator")
@@ -15,7 +15,7 @@ def interface():
         print("9 - Quit")
         print("")
         choice = int(input("Enter your choice: "))
-        #print(type(choice))
+        # print(type(choice))
         print("")
         if choice == 9:
             keep_running = False
@@ -29,15 +29,18 @@ def interface():
     print(choice)
     return choice
 
-#HDL functions
+
+# HDL functions
 def HDL_Driver():
     HDL_Value = HDL_Input()
     HDL_Character = HDL_Analysis(HDL_Value)
     HDL_Output(HDL_Value, HDL_Character)
 
+
 def HDL_Input():
     HDL_Value = int(input("Enter HDL Value: "))
     return HDL_Value
+
 
 def HDL_Analysis(HDL_Value):
     if HDL_Value >= 60:
@@ -47,19 +50,24 @@ def HDL_Analysis(HDL_Value):
     else:
         return "Low"
 
+
 def HDL_Output(HDL_Value, HDL_Character):
-    print("The HDL value of {} is considered {}".format(HDL_Value, HDL_Character))
+    print("The HDL value of {} is considered {}"
+          .format(HDL_Value, HDL_Character))
     print("")
-    
-#LDL functions
+
+
+# LDL functions
 def LDL_Driver():
     LDL_Value = LDL_Input()
     LDL_Character = LDL_Analysis(LDL_Value)
     LDL_Output(LDL_Value, LDL_Character)
 
+
 def LDL_Input():
     LDL_Value = int(input("Enter LDL Value: "))
     return LDL_Value
+
 
 def LDL_Analysis(LDL_Value):
     if LDL_Value >= 190:
@@ -71,8 +79,10 @@ def LDL_Analysis(LDL_Value):
     else:
         return "Normal"
 
+
 def LDL_Output(LDL_Value, LDL_Character):
-    print("The LDL value of {} is considered {}".format(LDL_Value, LDL_Character))
+    print("The LDL value of {} is considered {}"
+          .format(LDL_Value, LDL_Character))
     print("")
 
 
@@ -82,22 +92,27 @@ def Cholesterol_Input():
     Cholesterol_Value = int(input("Enter Cholesterol Value: "))
     return Cholesterol_Value
 
+
 def Cholesterol_Driver():
     Cholesterol_Value = Cholesterol_Input()
     Cholesterol_Character = Cholesterol_Analysis(Cholesterol_Value)
-    Cholesterol_Output(Cholesterol_Value,Cholesterol_Character)
+    Cholesterol_Output(Cholesterol_Value, Cholesterol_Character)
+
 
 def Cholesterol_Analysis(Cholesterol_Value):
     if Cholesterol_Value < 200:
         return "Normal"
     elif 200 <= Cholesterol_Value <= 239:
         return "Borderline High"
-    else :
+    else:
         return "High"
 
-def Cholesterol_Output(Cholesterol_Value, Cholesterol_Character) :
-    print("The cholesterol value of {} is considered {}".format(Cholesterol_Value,Cholesterol_Character))
+
+def Cholesterol_Output(Cholesterol_Value, Cholesterol_Character):
+    print("The cholesterol value of {} is considered {}"
+          .format(Cholesterol_Value, Cholesterol_Character))
     print("")
+
 
 if __name__ == "__main__":
     interface()
