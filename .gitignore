@@ -2,6 +2,7 @@
 __pycache__
 my_venv/
 .ipynb_checkpoints/
+numpy_matplotlib_class/
 =======
 # Byte-compiled / optimized / DLL files
 __pycache__/
