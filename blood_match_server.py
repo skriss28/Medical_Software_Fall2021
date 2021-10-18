@@ -15,8 +15,8 @@ r2 = requests.get(server_name + "get_blood_type/" + ID1)
 r3 = requests.get(server_name + "get_blood_type/" + ID2)
 bt_donor = r2.text
 bt_recipient = r3.text
-print(bt_donor, type(bt_donor))
-print(bt_recipient, type(bt_recipient))
+# print(bt_donor, type(bt_donor))
+# print(bt_recipient, type(bt_recipient))
 
 acceptable_match = []
 
