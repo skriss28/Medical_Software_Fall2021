@@ -2,6 +2,9 @@ pytest~=6.2.5
 pytest-pycodestyle
 requests~=2.26.0
 flask~=2.0.2
+pymodm
+dnspython
+certifi
 
 pip~=21.1.2
 wheel~=0.36.2
@@ -24,3 +27,6 @@ atomicwrites~=1.4.0
 certifi~=2021.10.8
 urllib3~=1.26.7
 pycodestyle~=2.8.0
+DateTime~=4.3
+numpy~=1.21.3
+pytz~=2021.3
