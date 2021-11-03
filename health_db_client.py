@@ -1,10 +1,15 @@
 import requests
 
-# Successfully add patient
-patient1 = {"name": "Ann Ables", "id": 201, "blood_type": "A+"}
-r = requests.post("http://127.0.0.1:5000/new_patient", json=patient1)
-print(r.status_code)
-print(r.text)
+
+def add_patient_to_server(name_input, id_input, blood_type_input):
+
+    # Successfully add patient
+    patient1 = {"name": name_input, "id": id_input,
+                "blood_type": blood_type_input}
+    r = requests.post("http://127.0.0.1:5000/new_patient", json=patient1)
+    print(r.status_code)
+    print(r.text)
+    return r.text
 
 # Successfully add patient
 patient2 = {"name": "Bob Boyles", "id": 202, "blood_type": "O-"}
