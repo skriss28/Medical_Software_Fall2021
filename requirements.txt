@@ -5,6 +5,7 @@ flask~=2.0.2
 pymodm
 dnspython
 certifi
+Pillow
 
 pip~=21.1.2
 wheel~=0.36.2
